@@ -104,7 +104,7 @@ public class Menu {
                 Cocina.FinalizarPedidos();
                 Cocina.MostrarPedidos();
                 
-                System.out.println("Gracias por comprar en pizzeria Beto ;D");
+                System.out.println("Gracias por comprar en NegocioExpress ;D");
                 
                 return false;
                 
