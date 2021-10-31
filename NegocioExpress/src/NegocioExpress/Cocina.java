@@ -41,13 +41,13 @@ public class Cocina {
             
             // Imprimir el nombre del cliente
             //
-            System.out.println(nombre + ": ");
+            System.out.println("--- " + nombre + " ---");
             
             // Imprimir cada comida del cliente
             //
             for (int i = 0; i < lista.size(); i++) 
             {
-                System.out.println("Nombre: " + lista.get(i).GetNombre());
+                System.out.println("Nombre comida: " + lista.get(i).GetNombre());
                 System.out.println("Precio: " + lista.get(i).CalcularPrecio());
             }
         }
