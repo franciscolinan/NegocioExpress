@@ -23,7 +23,20 @@ public class Menu {
         System.out.println("[4] - Mostrar total por cliente");
         System.out.println("[5] - Realizar pago y finalizar");
         
-        switch  (in_.nextInt())
+        int opcion = 0;
+        
+        // Verificar que el usuario ingresó un entero
+        //
+        try
+        {
+            opcion = in_.nextInt();
+        }
+        catch (Exception e){
+            in_.nextLine();
+            return true;
+        }
+        
+        switch  (opcion)
         {
             case 1:
                 // Agregar pedido
@@ -40,7 +53,18 @@ public class Menu {
                 System.out.println("[2] - Mediano");
                 System.out.println("[3] - Grande");
                 
-                int tamanio = in_.nextInt();
+                // Verificar que el usuario ingresó un entero
+                //
+                try
+                {
+                    opcion = in_.nextInt();
+                }
+                catch (Exception e){
+                    in_.nextLine();
+                    return true;
+                }
+                
+                int tamanio = opcion;
                 
                 System.out.println("--- Tipo de comida ---");
                 System.out.println("[1] - Pizza");
@@ -48,7 +72,18 @@ public class Menu {
                 System.out.println("[3] - Hamburguesa");
                 Comida comida;
                 
-                switch  (in_.nextInt())
+                // Verificar que el usuario ingresó un entero
+                //
+                try
+                {
+                    opcion = in_.nextInt();
+                }
+                catch (Exception e){
+                    in_.nextLine();
+                    return true;
+                }
+                
+                switch  (opcion)
                 {
                     case 1:
                         comida = new Pizza(tamanio);
